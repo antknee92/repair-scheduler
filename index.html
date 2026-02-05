@@ -584,28 +584,18 @@
 
     <!-- Firebase SDK -->
     <script type="module">
-        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
-        import { getFirestore, collection, addDoc, getDocs, doc, updateDoc, deleteDoc, onSnapshot, query, orderBy } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
-    
-        // TODO: Replace with your Firebase configuration
-        // Get this from Firebase Console > Project Settings > Your apps > SDK setup and configuration
-        const firebaseConfig = {
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
+    import { getFirestore, collection, addDoc, getDocs, doc, updateDoc, deleteDoc, onSnapshot, query, orderBy } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
 
-          apiKey: "AIzaSyCilOnF7_RCEVM7ule8kpA-c4uybZhnq60",
-
-          authDomain: "mac-repair-scheduler.firebaseapp.com",
-
-          projectId: "mac-repair-scheduler",
-
-          storageBucket: "mac-repair-scheduler.firebasestorage.app",
-
-          messagingSenderId: "268040834597",
-
-          appId: "1:268040834597:web:8158094373ee6c0d9679cc"
-
-        };
-
-
+    // TODO: Replace with your Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyCilOnF7_RCEVM7ule8kpA-c4uybZhnq60",
+        authDomain: "mac-repair-scheduler.firebaseapp.com",
+        projectId: "mac-repair-scheduler",
+        storageBucket: "mac-repair-scheduler.firebasestorage.app",
+        messagingSenderId: "268040834597",
+        appId: "1:268040834597:web:8158094373ee6c0d9679cc"
+    };
         // Check if Firebase is configured
         const isConfigured = firebaseConfig.apiKey !== "AIzaSyCilOnF7_RCEVM7ule8kpA-c4uybZhnq60";
         
