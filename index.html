@@ -586,7 +586,7 @@
     <script type="module">
         import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
         import { getFirestore, collection, addDoc, getDocs, doc, updateDoc, deleteDoc, onSnapshot, query, orderBy } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js';
-
+        import { initializeApp } from "firebase/app";
         // TODO: Replace with your Firebase configuration
         // Get this from Firebase Console > Project Settings > Your apps > SDK setup and configuration
         const firebaseConfig = {
@@ -604,7 +604,7 @@
           appId: "1:268040834597:web:8158094373ee6c0d9679cc"
 
         };
-
+        const app = initializeApp(firebaseConfig);
 
 
         // Check if Firebase is configured
